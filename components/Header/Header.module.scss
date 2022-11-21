@@ -1,7 +1,10 @@
+@import "styles/theme";
+
 .header {
   display: flex;
   flex-direction: row;
-  background: aquamarine;
+  background: $primary-color;
+  color: $on-primary-color;
   width: 100%;
   justify-content: space-around;
 }

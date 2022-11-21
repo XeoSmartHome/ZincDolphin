@@ -24,8 +24,3 @@ a {
     background: black;
   }
 }
-
-div {
-  display: flex;
-  flex-direction: column;
-}

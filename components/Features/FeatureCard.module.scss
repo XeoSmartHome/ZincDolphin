@@ -1,0 +1,33 @@
+.card {
+  aspect-ratio: 1;
+  background: whitesmoke;
+  margin: 1.5rem;
+  width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  transition: all .2s ease-in-out;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+.icon {
+  flex: 1;
+}
+
+.text {
+  flex: 1;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1rem;
+}

@@ -1,3 +1,25 @@
+@import "styles/theme";
+
 .banner {
-  aspect-ratio: 21/9;
+  aspect-ratio: 3;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  position: absolute;
+  width: max(50%, 300px);
+  padding: 2rem;
+  color: $on-primary-color;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
 }
