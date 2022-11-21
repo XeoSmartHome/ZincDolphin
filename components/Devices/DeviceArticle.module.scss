@@ -1,13 +1,39 @@
 .deviceArticle {
   display: flex;
-  background: #fed9b7;
+  margin: 2rem;
+}
+
+.horizontalReverse {
+  flex-direction: row-reverse;
 }
 
 .textContainer {
   display: flex;
+  flex: 1;
   flex-direction: column;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .imageContainer {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.imageWrapper {
+  width: 40vw;
+  aspect-ratio: 16/9;
   display: flex;
 }
