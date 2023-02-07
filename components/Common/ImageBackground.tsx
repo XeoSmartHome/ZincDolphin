@@ -13,6 +13,6 @@ const ImageBackground = () => {
             />
         </div>
     );
-}
+};
 
 export default ImageBackground;

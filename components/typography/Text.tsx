@@ -9,7 +9,7 @@ const Text: FC<TextProps> = ({children}) => {
         <span>
             {children}
         </span>
-    )
-}
+    );
+};
 
 export default Text;

@@ -10,7 +10,7 @@ const HeaderButton: FC<HeaderButtonProps> = ({title}) => {
         <div className={styles.headerButton}>
             {title}
         </div>
-    )
-}
+    );
+};
 
 export default HeaderButton;

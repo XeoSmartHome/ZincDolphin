@@ -16,7 +16,7 @@ const FeatureCard: FC<FeatureCardProps> = ({title, description}) => {
                 <p className={styles.description}>{description}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default FeatureCard;
