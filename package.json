@@ -10,6 +10,11 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.5",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
@@ -19,6 +24,7 @@
     "next-images": "^1.8.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intl": "^6.4.4",
     "sass": "^1.56.1",
     "typescript": "4.9.3"
   }
