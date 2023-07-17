@@ -13,8 +13,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Image from "next/image";
+import useTextNavigation from "@mui/base/utils/useTextNavigation";
+import Link from "next/link";
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Products', 'Pricing', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const PageHeader = () => {
@@ -29,6 +31,7 @@ const PageHeader = () => {
 	};
 
 	const handleCloseNavMenu = () => {
+
 		setAnchorElNav(null);
 	};
 
@@ -123,13 +126,14 @@ const PageHeader = () => {
 					</Typography>
 					<Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
 						{pages.map((page) => (
-							<Button
-								key={page}
-								onClick={handleCloseNavMenu}
-								sx={{my: 2, color: 'white', display: 'block'}}
-							>
-								{page}
-							</Button>
+							<Link href={page.toLowerCase()} key={page}>
+								<Button
+									onClick={handleCloseNavMenu}
+									sx={{my: 2, color: 'white', display: 'block'}}
+								>
+									{page}
+								</Button>
+							</Link>
 						))}
 					</Box>
 

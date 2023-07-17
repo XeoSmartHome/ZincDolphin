@@ -24,6 +24,17 @@ const AboutPage = () => {
 					description={description}
 					Image={<iframe style={{height: "100%", width: "100%"}} src="https://www.youtube.com/embed/tatahWDD6Vk" title="YouTube video player"/>}
 				/>
+				<Article
+					title={"XeoSmartHome demo"}
+					description={description}
+					Image={<iframe style={{height: "100%", width: "100%"}} src="https://www.youtube.com/embed/tatahWDD6Vk" title="YouTube video player"/>}
+					flipped
+				/>
+				<Article
+					title={"XeoSmartHome demo"}
+					description={description}
+					Image={<iframe style={{height: "100%", width: "100%"}} src="https://www.youtube.com/embed/tatahWDD6Vk" title="YouTube video player"/>}
+				/>
 			</Container>
 		</>
 	);
