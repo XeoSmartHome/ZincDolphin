@@ -9,7 +9,7 @@
 .content {
   position: absolute;
   width: max(50%, 300px);
-  padding: 2rem;
+  padding: 4rem;
   color: $on-primary-color;
 }
 
@@ -22,4 +22,8 @@
 .description {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.getStated {
+  margin-top: 2rem;
 }

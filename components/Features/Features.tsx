@@ -1,10 +1,12 @@
 import FeatureCard from "./FeatureCard";
 import styles from "./Features.module.scss";
+import Box from "@mui/material/Box";
+import {Grid} from "@mui/material";
 
 const Features = () => {
     return (
         <div className={styles.features}>
-            <div className={styles.features__container}>
+            <Grid container gap={'4rem'} paddingX={'10rem'} justifyContent="center">
                 <FeatureCard
                     title={"Performant"}
                     description={"High performant backend"}
@@ -33,7 +35,7 @@ const Features = () => {
                     title={"Cross platform"}
                     description={"Support for all platforms: Android IOS and desktop"}
                 />
-            </div>
+            </Grid>
         </div>
     );
 };

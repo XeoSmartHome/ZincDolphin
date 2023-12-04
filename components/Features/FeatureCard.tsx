@@ -1,5 +1,6 @@
 import {FC} from "react";
 import styles from "./FeatureCard.module.scss";
+import {Grid, Paper} from "@mui/material";
 
 type FeatureCardProps = {
     title: string,
@@ -8,14 +9,16 @@ type FeatureCardProps = {
 
 const FeatureCard: FC<FeatureCardProps> = ({title, description}) => {
     return (
-        <div className={styles.card}>
-            <div className={styles.icon}>
-            </div>
-            <div className={styles.text}>
-                <p className={styles.title}>{title}</p>
-                <p className={styles.description}>{description}</p>
-            </div>
-        </div>
+        <Grid item>
+            <Paper sx={{height: '20rem', width: '15rem'}}>
+                <div className={styles.icon}>
+                </div>
+                <div className={styles.text}>
+                    <p className={styles.title}>{title}</p>
+                    <p className={styles.description}>{description}</p>
+                </div>
+            </Paper>
+        </Grid>
     );
 };
 

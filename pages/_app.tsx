@@ -9,7 +9,7 @@ const darkTheme = createTheme({
 	},
 });
 
-export default function App({Component, pageProps}: AppProps) {
+const App = ({Component, pageProps}: AppProps) => {
 	return (
 		<ThemeProvider theme={darkTheme}>
 			<CssBaseline/>
@@ -17,3 +17,5 @@ export default function App({Component, pageProps}: AppProps) {
 		</ThemeProvider>
 	);
 }
+
+export default App;

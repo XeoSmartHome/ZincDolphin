@@ -16,7 +16,7 @@ import Image from "next/image";
 import useTextNavigation from "@mui/base/utils/useTextNavigation";
 import Link from "next/link";
 
-const pages = ['Products', 'Pricing', 'About'];
+const pages = ['Devices', 'Pricing', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const PageHeader = () => {

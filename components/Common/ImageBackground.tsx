@@ -5,7 +5,7 @@ const ImageBackground = () => {
     return (
         <div className={styles.container}>
             <Image
-                src="/banner.png"
+                src="/banner.jpg"
                 layout="fill"
                 objectFit="cover"
                 quality={100}
