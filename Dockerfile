@@ -10,8 +10,6 @@ COPY . .
 
 RUN yarn build
 
-RUN yarn export
-
 FROM nginx:alpine
 
 COPY --from=builder /app/out /usr/share/nginx/html

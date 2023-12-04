@@ -2,11 +2,12 @@
 // import {withImages} from 'next-images';
 
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  images: {
-    unoptimized: true
-  }
-}
+    output: 'export',
+    reactStrictMode: true,
+    swcMinify: true,
+    images: {
+        unoptimized: true
+    }
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

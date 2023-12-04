@@ -16,6 +16,6 @@ const App = ({Component, pageProps}: AppProps) => {
 			<Component {...pageProps} />
 		</ThemeProvider>
 	);
-}
+};
 
 export default App;
