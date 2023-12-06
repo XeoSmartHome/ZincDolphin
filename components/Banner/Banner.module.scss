@@ -4,6 +4,7 @@
   aspect-ratio: 3;
   display: flex;
   align-items: center;
+  min-height: 25rem;
 }
 
 .content {
@@ -11,19 +12,4 @@
   width: max(50%, 300px);
   padding: 4rem;
   color: $on-primary-color;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.description {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.getStated {
-  margin-top: 2rem;
 }
