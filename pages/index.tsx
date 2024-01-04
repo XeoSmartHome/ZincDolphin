@@ -11,8 +11,6 @@ const HomePage = () => {
 		<div className={styles.container}>
 			<Head>
 				<title>XeoSmartHome</title>
-				<Meta content={"height=device-height, width=device-width, initial-scale=1.0"} name={"viewport"}/>
-				<link rel="shortcut icon" href="/logo/xeo_vectorial_logo.svg"/>
 			</Head>
 			<PageHeader/>
 			<Banner/>
