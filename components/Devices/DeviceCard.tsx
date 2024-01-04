@@ -7,7 +7,7 @@ interface DeviceCardProps {
 	device: Device;
 }
 
-const DeviceCard: FC<DeviceCardProps> = ({device: {name, shortDescription}}) => {
+const DeviceCard: FC<DeviceCardProps> = ({device: {id, name, shortDescription}}) => {
 	return (
 		<Card>
 			<CardMedia
@@ -31,7 +31,7 @@ const DeviceCard: FC<DeviceCardProps> = ({device: {name, shortDescription}}) => 
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Link>
+				<Link href={`/devices/${id}`}>
 					<Button color="primary">
 						Read More
 					</Button>

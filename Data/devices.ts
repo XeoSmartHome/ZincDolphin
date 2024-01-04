@@ -1,5 +1,6 @@
 export const XEO_DEVICES: Device[] = [
 	{
+		id: 'irrigation-controller',
 		name: 'Irrigation controller',
 		shortDescription: 'Automate your garden irrigation system, schedule watering and more.',
 		longDescription: 'Automate your garden irrigation system, schedule watering and more.',
@@ -8,6 +9,7 @@ export const XEO_DEVICES: Device[] = [
 		}
 	},
 	{
+		id: 'automatic-window-blinds',
 		name: 'Automatic window blinds',
 		shortDescription: 'Schedule wake up time and let the blinds open automatically.',
 		longDescription: 'Schedule wake up time and let the blinds open automatically.',
@@ -16,6 +18,7 @@ export const XEO_DEVICES: Device[] = [
 		},
 	},
 	{
+		id: 'smart-light-switch',
 		name: 'Smart light switch',
 		shortDescription: 'Control your lights from anywhere.',
 		longDescription: 'Control your lights from anywhere.',
@@ -24,6 +27,7 @@ export const XEO_DEVICES: Device[] = [
 		},
 	},
 	{
+		id: 'smart-thermostat',
 		name: 'Smart thermostat',
 		shortDescription: 'Control the temperature in your house from anywhere.',
 		longDescription: 'Control the temperature in your house from anywhere.',
