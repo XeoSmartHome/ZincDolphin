@@ -14,9 +14,9 @@ const TermsAndConditionsPage: FC = () => {
 				</h2>
 
 				<p>
-					Welcome to XeoSmartHome ("XeoSmartHome", "we", "us", or "our"). These Terms and Conditions of Use
-					("Terms") govern your use of our website located at https://xeosmarthome.com (the "Website") and our
-					mobile application named XeoApp (the "App"), collectively referred to as the "Platform". By
+					Welcome to XeoSmartHome (&quot;XeoSmartHome&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). These Terms and Conditions of Use
+					(&quot;Terms&quot;) govern your use of our website located at https://xeosmarthome.com (the &quot;Website&quot;) and our
+					mobile application named XeoApp (the &quot;App&quot;), collectively referred to as the &quot;Platform&quot;. By
 					accessing or
 					using the Platform, you agree to be bound by these Terms.
 				</p>
@@ -69,7 +69,7 @@ const TermsAndConditionsPage: FC = () => {
 				<p>
 					a. Integration: Users may have the option to log in to the Platform using their Google account. By
 					choosing
-					to log in with Google, you agree to comply with Google's terms of service and privacy policy.
+					to log in with Google, you agree to comply with Google&apos;s terms of service and privacy policy.
 				</p>
 
 				<h3>
@@ -77,7 +77,7 @@ const TermsAndConditionsPage: FC = () => {
 				</h3>
 
 				<p>
-					a. Camera Access: The XeoApp requires access to your device's camera to scan QR codes of IoT devices
+					a. Camera Access: The XeoApp requires access to your device&apos;s camera to scan QR codes of IoT devices
 					for
 					setup purposes. This access is necessary for the proper functioning of the App and to facilitate the
 					setup
@@ -85,7 +85,7 @@ const TermsAndConditionsPage: FC = () => {
 				</p>
 
 				<p>
-					b. Fine Location Permission: The App requires access to your device's fine location permission to
+					b. Fine Location Permission: The App requires access to your device&apos;s fine location permission to
 					connect to
 					IoT devices via Bluetooth during the setup process. This access is essential for establishing a
 					connection
@@ -159,7 +159,7 @@ const TermsAndConditionsPage: FC = () => {
 				</h4>
 			</Box>
 		</Box>
-	)
-}
+	);
+};
 
 export default TermsAndConditionsPage;

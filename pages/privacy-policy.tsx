@@ -14,10 +14,10 @@ const PrivacyPolicyPage: FC = () => {
 				</h2>
 
 				<p>
-					Welcome to XeoSmartHome ("XeoSmartHome", "we", "us", or "our"). This Privacy Policy describes how we
+					Welcome to XeoSmartHome (&quot;XeoSmartHome&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). This Privacy Policy describes how we
 					collect, use, and disclose personal information when you use our website located at
-					https://xeosmarthome.com (the "Website") and our mobile application named XeoApp (the "App"),
-					collectively referred to as the "Platform". By accessing or using the Platform, you agree to the
+					https://xeosmarthome.com (the &quot;Website&quot;) and our mobile application named XeoApp (the &quot;App&quot;),
+					collectively referred to as the &quot;Platform&quot;. By accessing or using the Platform, you agree to the
 					terms of this Privacy Policy.
 				</p>
 
@@ -88,7 +88,7 @@ const PrivacyPolicyPage: FC = () => {
 				</p>
 
 				<h3>
-					6. Children's Privacy
+					6. Children&apos;s Privacy
 				</h3>
 
 				<p>
@@ -126,7 +126,7 @@ const PrivacyPolicyPage: FC = () => {
 
 			</Box>
 		</Box>
-	)
-}
+	);
+};
 
 export default PrivacyPolicyPage;
