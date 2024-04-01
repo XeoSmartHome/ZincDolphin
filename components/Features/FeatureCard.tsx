@@ -10,8 +10,9 @@ type FeatureCardProps = {
 const FeatureCard: FC<FeatureCardProps> = ({title, description}) => {
     return (
         <Grid item>
-            <Paper sx={{height: '20rem', width: '15rem'}}>
+            <Paper sx={{height: '18rem', width: '15rem', padding: '1rem'}}>
                 <div className={styles.icon}>
+                    <img src="/logo/xeo_vectorial_logo_white.svg" alt="feature" className={styles.iconImage}/>
                 </div>
                 <div className={styles.text}>
                     <p className={styles.title}>{title}</p>

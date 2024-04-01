@@ -3,7 +3,7 @@
   background: whitesmoke;
   margin: 1.5rem;
   width: 300px;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
@@ -16,6 +16,14 @@
 
 .icon {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.iconImage {
+  width: 50%;
+  height: 50%;
 }
 
 .text {
