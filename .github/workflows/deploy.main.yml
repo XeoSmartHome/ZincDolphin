@@ -1,0 +1,42 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '16.x'
+          cache: 'yarn'
+      - name: Install yarn
+        run: npm install -g yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Build
+        run: yarn build
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Build
+          path: out
+  Deploy:
+    runs-on: production
+    needs: Build
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: Build
+          path: build
+
+      - name: Remove old files
+        run: |
+          rm -rf /var/www/html/zinc-dolphin/*    
+
+      - name: Copy build files
+        run: |
+          cp -r build/* /var/www/html/zinc-dolphin

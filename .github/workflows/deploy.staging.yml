@@ -1,14 +1,14 @@
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '16.x'
       - name: Install yarn
@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Build
           path: out
@@ -27,10 +27,15 @@ jobs:
     needs: Build
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: Build
           path: build
-      - name: copy files
+
+      - name: Remove old files
         run: |
-          cp -r build/* /var/www/html/zinc-dolphin
+          rm -rf /var/www/html/zinc-dolphin/*   
+
+      - name: Copy build files
+        run: |
+          cp -r build/* /var/www/html/zinc-dolphin-staging
