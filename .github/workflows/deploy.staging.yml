@@ -34,7 +34,7 @@ jobs:
 
       - name: Remove old files
         run: |
-          rm -rf /var/www/html/zinc-dolphin/*   
+          rm -rf /var/www/html/zinc-dolphin-staging/*   
 
       - name: Copy build files
         run: |
